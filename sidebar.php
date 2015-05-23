@@ -25,7 +25,11 @@
             dynamic_sidebar( 'sidebar_definition' );
         }
     } else
-    if ( is_active_sidebar( 'sidebar_default' ) ) {
+    if ( $post_type == 'risk_doc' ) {
+        if ( is_active_sidebar( 'sidebar_definition' ) ) {
+            //dynamic_sidebar( 'sidebar_definition' );
+        }
+    } else    if ( is_active_sidebar( 'sidebar_default' ) ) {
         dynamic_sidebar( 'sidebar_default' );
     }
     ?></div><!--#secondary .widget-area -->

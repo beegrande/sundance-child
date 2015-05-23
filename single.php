@@ -21,9 +21,11 @@ get_header();
 //            if ( $post_type == 'service' ) {
 //                get_template_part( 'content', 'single-service' );
 //            } else
-//            if ( $post_type == 'definition' ) {
-//                get_template_part( 'content', 'single-definition' );
-//            } else
+            if ( $post_type == 'risk_doc' ) {
+                echo '<div class="full_w">'; 
+                get_template_part( 'content', 'single-risk_doc' );
+                echo '</div>';
+            } else
             get_template_part( 'content', 'single' );
             ?>
             <?php //sundance_content_nav( 'nav-below' ); ?>
